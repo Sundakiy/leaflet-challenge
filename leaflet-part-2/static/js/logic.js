@@ -49,15 +49,15 @@ function createFeatures(earthquakeData) {
 // Circles color palette based on mag (feature) data marker: data markers should reflect the magnitude of the earthquake by their size and the depth of the earthquake by color. Earthquakes with higher magnitudes should appear larger, and earthquakes with greater depth should appear darker in color.
 function chooseColor(mag){
     switch(true){
-        case(1.0 <= mag && mag <= 2.5):
+        case(-10 <= mag && mag <= 10):
             return "#0071BC"; // Strong blue
-        case (2.5 <= mag && mag <=4.0):
+        case (10 <= mag && mag <=30):
             return "#35BC00";
-        case (4.0 <= mag && mag <=5.5):
+        case (30 <= mag && mag <=50):
             return "#BCBC00";
-        case (5.5 <= mag && mag <= 8.0):
+        case (50 <= mag && mag <= 70):
             return "#BC3500";
-        case (8.0 <= mag && mag <=20.0):
+        case (70 <= mag && mag <=90):
             return "#BC0000";
         default:
             return "#E2FFAE";
