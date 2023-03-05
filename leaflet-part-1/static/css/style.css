@@ -12,7 +12,7 @@ html {
   line-height: 22px;
   color: black;
   text-align: right;
-  background-color: snow;
+  background-color: rgb(216, 210, 210);
 }
 .legend i {
   width: 35px;
